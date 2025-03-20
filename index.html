@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diagramas UML  </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>MAX CAMPO</h1>
+    
+    <div class="botones">
+        <button onclick="mostrarDiagrama('clases')">Diagrama de Clases</button>
+        <button onclick="mostrarDiagrama('objetos')">Diagrama de Objetos</button>
+        <button onclick="mostrarDiagrama('componentes')">Diagrama de Componentes</button>
+        <button onclick="mostrarDiagrama('despliegue')">Diagrama de Despliegue</button>
+        <button onclick="mostrarDiagrama('paquetes')">Diagrama de Paquetes</button>
+        <button onclick="mostrarDiagrama('casos_uso')">Diagrama de Casos de Uso</button>
+        <button onclick="mostrarDiagrama('actividades')">Diagrama de Actividades</button>
+        <button onclick="mostrarDiagrama('estados')">Diagrama de Estados</button>
+        <button onclick="mostrarDiagrama('secuencia')">Diagrama de Secuencia</button>
+        <button onclick="mostrarDiagrama('comunicacion')">Diagrama de Comunicación</button>
+    </div>
+
+    <div id="contenido-diagrama">
+        <p>Haz clic en un botón para ver el diagrama.</p>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
